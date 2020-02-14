@@ -10,6 +10,7 @@ import * as t from '../Typography';
 import { lighten, darken } from 'polished';
 import Helmet from 'react-helmet';
 import Avatar from '../images/avatar.jpg'
+import Background from '../images/bg3.jpg'
 
 const HeaderWrapper = styled.div`
   height: auto;
@@ -24,7 +25,7 @@ const HeaderWrapper = styled.div`
   right: 0;
   z-index: 999;
   color: ${Colors.white};
-  background: ${props => (props.scrolled ? `${Colors.white};` : 'transparent')};
+  background: ${Background};
   animation: ${props => (props.scrolled ? 'fadein' : 'fadeout')} 0.5s;
   ${props => props.scrolled && 'box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.1);'}
   ${t.P} {
